@@ -1,0 +1,18 @@
+react-sidenav
+react-slick for slider
+
+
+
+  useEffect(() => {
+    request(start, end);
+  }, []);
+
+  function request(start, end) {
+    axios.get(`${URL}/articles?_start=${start}&_end=${end}`).then(response => {
+      return setItems(i => [...items, ...response.data]);
+    });
+  }
+
+
+
+             <Image src={`url(/images/videos/${item.image})`} size="100px"  />
